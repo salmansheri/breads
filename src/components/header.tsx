@@ -7,6 +7,7 @@ import {
   OrganizationSwitcher,
 } from "@clerk/nextjs";
 import Image from "next/image";
+import { dark } from "@clerk/themes";
 
 const Header = () => {
   return (
@@ -34,6 +35,7 @@ const Header = () => {
         </div>
         <OrganizationSwitcher
           appearance={{
+            baseTheme: dark,
             elements: {
               organizationSwitcherTrigger: "py-2 px-4",
             },
